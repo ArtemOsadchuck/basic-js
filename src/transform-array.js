@@ -49,7 +49,8 @@ module.exports = function transform( arr ) {
 
 
       for (let i = 0; i < resultArr.length; i++){
-        if (resultArr[i] === '--double-prev' || resultArr[i] === '--discard-next' || resultArr[i] === '--double-next' || resultArr[i] === '--discard-prev') {
+        if (resultArr[i] === '--double-prev' || resultArr[i] === '--discard-next' 
+            || resultArr[i] === '--double-next' || resultArr[i] === '--discard-prev') {
           resultArr.splice(i, 1)
         }
     }
